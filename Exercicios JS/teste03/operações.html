@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de média</title>
+
+
+</head>
+<body>
+    <header> 
+        <h1> Vários Cálculos em JS </h1>
+    </header>
+
+    <p> 
+        <input type="button" value="Clique para calcular" onclick="calcular()">
+    </p>
+    <div id="res" > 
+        O resultado vai aparecer aqui...
+    </div>
+    <script> 
+    
+        function recuo() {
+            document.write('<br>')
+        }    
+
+        function calcular() { 
+        
+        let n1 = Number(window.prompt('Digite um número'))
+        document.write(`O número a ser calculado será o ${n1} `)
+        document.write('<hr>')
+        let res = document.getElementById('res')
+        let valor = document.write(`O seu valor absoluto é: ${n1}`)
+        recuo()
+        let inteiro = document.write(`a sua parte inteira é ` + parseInt(`${n1}`))   //retorna numero inteiro
+        recuo()
+        let parteInt = document.write(`o seu número inteiro mais proximo` + Math.round(`${n1}`))
+        recuo()
+        let raiz = document.write(`a sua raiz quadrada é `+  Math.sqrt(`${n1}`))    //retorna raiz quadrada
+        recuo()
+        let cubica = document.write(`a sua raiz cúbica é ` + Math.cbrt(`${n1}`))    //retorna raiz cubica
+        recuo()
+        let expo = document.write(`sua exponenciaçãoe é ` + Math.trunc(n1))
+        
+    
+    }
+
+
+    </script>
+</body>
+    
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo o que aprendi</title>
+    <style>
+        body { 
+            background-color: darksalmon;
+            font: normal 20px Arial;
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body> 
+        <h1> Hello, World!!</h1>
+         <p> Estou exercendo o que aprendi :) </p>
+        <script>
+            var nome = window.prompt('Qual o seu nome?')
+            window.alert(`Olá ${nome} seja bem-vinda(o)!`)
+            var n1 = Number(window.prompt('Digite um número'))
+            var n2 = Number(window.prompt('Digite outro número'))
+            var s = (n1 + n2)
+            var r = window.alert(`A soma dos números que você digitou é ${s}`)
+            window.document.write(`Ei, o seu nome é ${nome} e a soma dos números que você digitou é ${s}, certo? <br> 
+            Veja só, o seu nome em negrito é <strong> ${nome}</strong>. <br> O seu nome em letras maiúsculas é: ${nome.toUpperCase()}. <br>
+            E em letras minúsculas é: ${nome.toLowerCase()}. <br>`)
+            var nota = 7
+            document.write (nota > 5 ? "Sua média foi superior a 5, seu status é aprovado" : "reprovado") // teste de operadores ternários
+
+            
+        </script>
+    
+</body>
+</html>

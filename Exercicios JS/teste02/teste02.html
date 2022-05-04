@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu segundo teste</title>
+    <style>
+        body {
+            background-color:rgb(136, 137, 199) ;
+            font: 18px normal Arial;
+            color:rgb(231, 236, 236); 
+            text-align: center;
+             
+        }
+        section {
+        background: white;
+        text-align: center;
+        border-radius: 10px ;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+        font: 20px normal Arial;
+        color:rgb(255, 184, 237)
+    
+        }
+
+    </style>
+    <section> Vamos Descontrair um Pouco! <p> &#x1F60F </p>
+    
+    </section>
+</head>
+<body>
+    <script>
+        function pula() {
+            document.write('<br>')
+        }
+        function escreva(frase) {
+            document.write(frase)
+        }
+        let nome = window.prompt('Qual o seu nome?')
+        let idade = window.prompt('Qual a sua idade?')
+        let signo = window.prompt('qual é o seu signo?')
+        pula()
+        pula()
+        document.write(`Olá ${nome}, Seja bem-vinda(o) !`)
+        pula() 
+
+        escreva('Obrigada pelas suas informações!')
+        pula()
+        escreva(`Segundo os dados que você digitou, a sua idade é ${idade}, e o seu signo é ${signo}!`)
+        pula()
+
+        if (signo == 'Áries' || signo == 'áries' || signo == 'aries') {
+            escreva('Que legal! Isso quer dizer que você nasceu entre 21 de março e 20 de abril.')
+        } else if (signo == 'Touro' || signo == 'touro') {
+            escreva('Que legal! Isso que dizer que vocÊ nasceu entre 21 de abril e 20 de maio')
+        } else if (signo == 'Gêmeos' || signo == 'Gemeos' || signo == 'gemeos') {
+            escreva('Que legal! Isso que dizer que vocÊ nasceu entre 21 de maio e 20 de junho ')
+        } else if (signo == 'Câncer' || signo == 'Cancer' || signo == 'cancer') {
+            escreva('Que legal! Isso quer dizer que você nasceu entre 21 de junho a 22 de julho ')
+        } else if (signo == 'leão') {
+            escreva('Que legal isso quer dizer que você nasceu entre 23 de julho a 22 de agosto ')
+        } else if (signo == 'virgem') {
+            escreva('Que legal isso quer dizer que você nasceu entre 23 de agosto a 22 de setembro')
+        } else if ( signo == 'libra') {
+            escreva('Que legal isso quer dizer que você nasceu entre 23 de setembro a 22 de outubro ')
+        } else if (signo == 'escorpião') {
+            escreva('Que legal isso quer dizer que você nasceu entre 23 de outubro a 21 de novembro ')
+        } else if (signo == 'sagitário') {
+            escreva('Que legal isso quer dizer que você nasceu entre 22 de novembro a 21 de dezembro')
+        } else if (signo == 'capricornio') {
+            escreva('Que legal isso quer dizer que você nasceu entre 22 de dezembro a 20 de janeiro')
+        } else if ( signo == 'aquario') {
+            escreva('Que legal isso quer dizer que você nasceu entre 21 de janeiro a 18 de fevereiro ')
+        } else if (signo == 'peixes') {
+            escreva('Que legal isso quer dizer que você nasceu entre 19 de fevereiro a 20 de março')
+        } else {
+            escreva('[ERRO] Reveja os caracteres digitados e tente novamente!')
+        }
+
+
+
+
+
+
+
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contador de média</title>
+</head>
+<body>
+    <header> Média do Aluno v3.0</header>
+    <p> 
+        <input type="button" value="calcular" onclick="calcular()">
+    </p>
+
+    <script> 
+        function calcular() { 
+        var nome = window.prompt('Qual o nome do aluno?')
+        document.write(` Cálculo da média final da aluna ${nome}. `)
+        let nota1 = parseFloat(window.prompt(` ${nome}, qual foi a sua primeira nota? `))
+        let nota2 = parseFloat(window.prompt(` ${nome}, qual foi a sua segunda nota? `))
+        let nota3 = parseFloat(window.prompt(` ${nome}, qual foi a sua terceira nota? `))
+        document.write('<br>')
+        let notas = document.write (` As notas obtidas foram: ${nota1}; ${nota2}; ${nota3}.`)
+        let media = nota1+ nota2 + nota3 
+        document.write('<br>')
+        document.write(` A média final obtida foi: ${media}.`)
+        document.write('<br>')
+        if (media > 10) {
+            document.write('Parabéns, continue estudando!')
+        } else if (media > 6) {
+            document.write('Parabéns! Sua média está dentro do esperado')
+        } else { 
+            document.write('Estude um pouco mais, você ainda não atingiu a média necessária')
+        }
+    
+    }
+
+
+    </script>
+</body>
+    
+</html>

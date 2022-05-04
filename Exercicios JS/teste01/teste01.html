@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meu teste 01 </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: rgb(165, 209, 229);
+            font: 18px normal Arial;
+            color:rgb(228, 138, 74);
+            align-items:center;
+        }
+    
+
+    </style>
+
+</head>
+<body> 
+    <h2> Escala de Braden - Cálculo de Risco para Lesão por Pressão</h2>
+    <img src="curativo150.jpg" alt="Foto de Tara Winstead no Pexels">  <img src="curativo2-150.jpg" alt="Foto de Tara Winstead no Pexels">  <img src="luva-fundo.jpg" alt="Luva cirurgica"> 
+    
+    <p> Percepção Sensorial: <input type="number" name="percepção" id="percep"> </p>
+    <p> Umidade: <input type="number" name="umidade" id="umid"> </p>
+    <p> Atividade: <input type="number" name="atividade" id="ativ"> </p>
+    <p> Mobilidade: <input type="number" name="mobilidade" id="mobilid"> </p>
+    <p> Nutrição: <input type="number" name="nutrição" id="nutri"> </p>
+    <p> Fricção e Cisalhamento: <input type="number" name="friccção" id="fric"> </p>
+    <input type="button" value="Calcular" onclick="calcular()">
+     <div id="braden"> Score: </div>
+
+
+    <script> 
+
+        function calcular () { 
+        let percep = document.getElementById('percep')
+        let umid = document.getElementById('umid')
+        let ativ = document.getElementById('ativ')
+        let mobi = document.getElementById('mobilid')
+        let nutri = document.getElementById('nutri')
+        let tens = document.getElementById('fric')
+        let escala = document.getElementById('braden')
+
+        let p = Number(percep.value)
+        let u = Number(umid.value)
+        let a = Number(ativ.value)
+        let m = Number(mobi.value)
+        let n = Number(nutri.value)
+        let t = Number(tens.value)
+        let bradenScore = (p+u+a+m+n+t)
+       
+        //braden.innerHTML = `O escore da Esclara Branden calculado foi: ${bradenScore}`
+
+        if (bradenScore >= 16 ) {
+           escala.innerHTML = `O Score Braden calculado foi: ${bradenScore}. O paciente se encontra em risco mínimo para desenvolver LP.`
+        } else if (bradenScore < 16 && bradenScore > 13) {
+            escala.innerHTML = `O Score Braden calculado foi: ${bradenScore}. Paciente apresenta risco moderado para desenvolver LP.`
+        } else {
+            escala.innerHTML = `O Score Braden calculado foi: ${bradenScore}. Paciente apresenta alto risco para desenvolver LP.`
+        }
+
+        }
+
+
+    </script>
+
+
+</body>
+</html>

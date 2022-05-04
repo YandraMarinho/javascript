@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area { /* para selecionar a div que se quer estilizar*/ /*'tudo isso é CSS'*/
+            background-color: pink ; /* cor de fundo da div*/
+            font: 20px normal Arial; /* tamanho e fonte da letra*/
+            color:rgb(69, 121, 16); /*cor da letra da mensagem inserida na div */
+            width: 200px; /* largura do background-color */
+            line-height:200px; /* deixar a msg na mesma altura da largura */
+            text-align: center; /* deixar o texto no centro*/
+
+
+        }
+
+    </style>
+</head>
+<body>
+   <div id="area" > <!--eventos de mouse criados em HTML: onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"-->
+    <!-- Esse evento de 'clicar' corresponde a uma function que será feita no JS-->
+    <strong> Interaja...3,2,1.</strong>
+   </div> 
+
+   <script>
+       var a = window.document.getElementById('area')
+        a.addEventListner('click', clicar)  //eventos de mouse com JS
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
+       function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.color ='blue'
+            a.style.background='orange'
+        }
+
+       function entrar() {
+            a.innerHTML= 'Entrou!'
+            a.style.color = 'purple'
+            a.style.background='green'
+        }
+
+        function saiu() {
+            a.innerHTML ='Saiu!'
+            a.style.color='red'
+            a.style.background='pink'
+        }
+
+   </script>
+</body>
+</html>

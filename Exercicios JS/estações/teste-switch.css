@@ -1,0 +1,25 @@
+
+body {
+    background-color: rgb(255, 127, 80);
+    font: 20pt normal Arial;
+    text-align: center;
+    color: rgb(255,165,0);
+}
+
+
+section {
+    background-color: rgb(210, 105, 30);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    height: 200px;
+    width: 500px;
+    margin:auto;
+}
+
+input {
+    background-color: coral;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgb(66, 210, 30);
+    color: rgb(29, 116, 62);
+}
